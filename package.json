@@ -1,0 +1,19 @@
+{
+  "name": "online-voting-system-frontend",
+  "version": "1.0.0",
+  "description": "Making voting system more interactive and friendly with accuracy and efficiency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinefe/online-voting-system-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinefe/online-voting-system-frontend/issues"
+  },
+  "homepage": "https://github.com/justinefe/online-voting-system-frontend#readme"
+}
