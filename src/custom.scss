@@ -1,0 +1,12 @@
+$theme-colors: (
+    "info": tomato,
+    "danger": teal,
+    'primary': #005DFF,
+    'primary-light': lighten( #005DFF, 40%),
+    'primary-dark': #001333,
+    'accent-light': lighten( #FFF6BB, 15%),
+    'accent': #FFF6BB
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

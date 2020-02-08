@@ -1,0 +1,25 @@
+$colors: (
+    primary: #005DFF,
+    primary-light: lighten( #005DFF, 40%),
+    primary-dark: darken( #005DFF, 40%),
+    accent-light: lighten( #FFF6BB, 15%),
+    accent: #FFF6BB,
+    secondary: green,
+    secondary-light: lighten( green, 40%),
+    secondary-dark: darken( green, 40%),
+    tertiary: rgb(238, 238, 238),
+    tertiary-dark: darken( rgb(238, 238, 238), 10%),
+    
+);
+
+$padding: 20px;
+$borders: 15px;
+$font: 'Montserrat', sans-serif;
+$destop: 848px;
+$NavLink: (
+    color: color(primary-dark),
+    font-size: 1.5em,
+    font-weight: bold,
+    text-decoration: none
+)  
+

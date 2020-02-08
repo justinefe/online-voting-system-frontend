@@ -1,0 +1,47 @@
+@import '../variables';
+@import '../functions';
+
+*body {
+    margin: 0;
+    padding: 0;
+};
+
+.center {
+    width: 80%;
+    margin: 8em auto;
+    box-shadow:  0 10px 30px rgba(0,0,0, 0.2);
+    background: color(accent);
+    padding: $padding;
+    border-radius:  $borders;    
+}
+
+td {
+    height: 3em;
+    padding-left: 10px;
+    font-family: $font;
+    font-weight: bold;
+}
+
+table {
+    border-spacing: 2px;
+    thead {
+        background-color: color(primary-dark);
+    }
+    tbody {
+        background-color: color(accent-light);
+        }
+    
+    #head-column {
+               td {
+                color: color(accent-light);
+                font-size: 1.2em;
+               }
+    }
+
+    #body-column {
+        td {
+         color: color(primary-dark);
+         font-size: 1.1em;
+        }
+}
+}

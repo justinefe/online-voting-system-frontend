@@ -1,0 +1,93 @@
+@import '../variables';
+@import '../functions';
+
+span {
+    font-family: $font;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: color(primary-dark);
+}
+
+#meet {
+    background: linear-gradient(135deg, transparent 68%, white 0);;
+    height: 5%;
+    text-align: center;
+    padding: $padding;
+    margin-bottom: 10px;
+    border-bottom: 4px solid white;
+    
+}
+
+#candidatePic {
+    height: 35%;
+    background-color: black;
+    padding: $padding;
+    background: linear-gradient(rgba(31, 33, 37, 0.7) 100%, transparent);
+    img{
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+#voteMe {
+    height: 20%;
+    text-align: center;
+    padding: $padding;
+
+    .btn {
+        // display: block;
+        // text-align: center;
+        // margin: 4px auto;
+        // width: 35%;
+        background: color(primary-dark) !important;
+        // border: 2px solid color(primary-dark);
+        // border-radius: 2px;
+        // font-size: 2.1em;
+        // color: color(accent-light);
+    }
+}
+
+#candidateDetails {
+    // height: 40%;
+    display: flex;
+    table {
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+.dashboard-main {
+    height: 100%;
+    display: flex;
+    .aside-main{
+        width: 20%;
+        height: 100%;
+        background: white;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .main-side{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .main-top {
+            // height: 25%;
+            // z-index: 1000;
+    // background: linear-gradient(rgba(31, 33, 37, 0.7) 100%, transparent);
+
+
+            img{
+                height: 400px;
+                object-fit: cover;
+
+            }
+        }
+        .main-bottom{
+            // padding-top: 10px;
+            height: 75%;
+        }
+    }
+}
+.carous{
+//     height: 100%;
+}
