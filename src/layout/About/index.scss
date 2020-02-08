@@ -1,0 +1,60 @@
+@import '../variables';
+@import '../functions';
+
+#about {
+    
+    height: 80%;
+    width: 95%;
+    display: block;
+    background-color: white;
+    margin: 6em auto;
+    box-shadow:  0 10px 30px rgba(0,0,0, 0.2);
+
+
+    #About-us {        
+        text-align: center;
+        border-bottom: color(primary-dark) solid 2px;
+        height: 30%;
+        padding: 15px auto;
+        margin: 0 auto;
+        width: 90%;
+        
+        strong {
+          font-family: $font;
+          font-size: 2em;
+          color: color(primary-dark);
+        }
+
+    }
+    #inner {
+        display: grid;
+        grid-gap: 60px;
+        grid-template-columns: 30% 70%;
+        height: 70%;
+    }
+
+    .card {
+        background:#fff;
+        padding: $padding;
+        display: inline-block;
+        overflow: hidden;
+        border-radius:  $borders;
+        box-shadow:  0 10px 30px rgba(0,0,0, 0.2); 
+        width: 90%;
+        height: 80%;
+        margin-left: 2em;
+        
+        span {
+            height: 80px;
+            text-align: auto;
+            font-family: $font;
+        }
+    }
+    #round-card {
+        height: fit-content;
+        align-self: center;
+        overflow: hidden;
+        height: 100%;
+        width: 90%;
+    }
+}

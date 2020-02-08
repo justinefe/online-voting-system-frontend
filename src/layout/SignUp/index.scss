@@ -1,0 +1,142 @@
+@import '../variables';
+@import '../functions';
+
+*body {
+    margin: 0;
+    padding: 0;
+};
+.span {
+        font-family: $font;
+        font-size: 1.2em;
+        color: color(primary-dark);
+  }
+  .button {
+    align-items: center;
+    margin: $padding 0;
+    padding: 0;
+    height: 3em;
+    width: 100%;
+    background:#fff;
+    border: 2px solid #fff;
+    box-shadow:  0 10px 30px rgba(0,0,0, 0.1); 
+    border-radius: 5px;
+    color: color(primary-dark);
+   
+  }
+
+#container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 'form-container svg';
+    width: 80%;
+    margin: 1em auto;
+
+    #form-container {
+        background: color(accent);
+        // grid-area: form-container;
+        display: block;
+        padding: 20px;
+        margin:  1em auto;
+        border-radius:  $borders;
+        box-shadow:  0 10px 30px rgba(0,0,0, 0.2); 
+        width: 80%;
+        // height: 90%;
+        #register {
+        background-color: color(primary-dark);
+        color:color(accent-light);
+
+
+        }
+        
+        #social {
+            button#facebook.btn {
+                display: flex;
+                flex-direction: row;
+               
+                @extend .button;
+                .btn-image {
+                    margin: 0;
+                    padding: 0;
+                    height: 100%;
+                    width: 25%;
+                    border-radius: 50%;
+                }
+                span {
+                    padding-left: 15px;
+                    @extend .span;
+                }
+            }
+            button#google.btn {
+                @extend button#facebook.btn
+            }
+            button#twitter.btn {
+                @extend button#facebook.btn
+            }
+        }
+        #form{
+            display: block;
+        }
+    };
+    #svg {
+        margin: 1em auto;
+        grid-area: svg;
+        display: block;
+        background:#fff;
+        width: 80%;
+        strong {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    }
+}
+
+.inputForm {
+    display: block;
+    margin: 0.8em 0;
+}
+.Label {
+    margin: 0.5em 0;
+    color: color(primary-dark);
+    // color:red;
+
+
+}
+
+.Input {
+    border-radius: 3px;
+    // border: 1px solid color(primary);
+    width: 100%;
+    padding: 3% 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+#form {
+    button {
+        display: block;
+        @extend .button;
+       font-family: $font;
+        font-size: 1em;
+        
+    }  
+    p {
+        @extend .span;
+        text-align: center;
+    }
+    
+   .NavLink p {
+        font-size: 0.8em;
+        margin: 0;
+        font-style: italic;
+        text-align: right;
+    }
+}
+
+.NavLink {
+    color: color(primary-dark);
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
