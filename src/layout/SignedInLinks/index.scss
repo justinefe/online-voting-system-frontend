@@ -1,0 +1,93 @@
+@import '../variables';
+@import '../functions';
+
+*body {
+    margin: 0;
+    padding: 0;
+};
+
+.header {
+    display: flex;
+    // height: 85px;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: color(accent-light);
+    box-shadow:  0 10px 30px rgba(0,0,0, 0.2); 
+    border-bottom: 3px solid color(primary-dark);
+  
+      
+    #logo {
+        font-family: $font;
+        display: flex;
+        align-self: center;
+        .logo-icon {
+            font-size: 3em; 
+            text-align: center;
+        }
+        .NavLink {
+                     color: color(primary-dark);
+                     font-size: 2.5em; 
+                     font-weight: bold;
+                     text-decoration: none;
+                } 
+    }
+
+    #links {
+        align-self: center;
+        .NavLink {
+            color: color(primary-dark);
+             font-size: 1.4em; 
+             font-weight: bold;
+             font-family: $font;
+             text-decoration: none;
+             &:hover{
+                 color: color(primary-dark);
+                 background-color: color(accent);
+            }                              
+        } 
+          
+                 ul {
+                     padding: 0px;
+                     margin: 0px;
+                    align-items: center;
+                    display: flex;
+                        justify-content: space-around;
+                        // flex-direction: row;
+                     li {
+                        display: inline;
+                        // padding-left: 10px;
+                        
+                        text-decoration: none;
+                        &:hover{
+                            background-color: color(accent);
+                            height: 100%;
+                       }   
+
+                                  
+                     }
+            }
+    }
+
+}
+#profile-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile-nav-image {
+    border-radius: 50%;
+    object-fit: contain;
+    height: 65px;
+    margin-top: 4px;
+}
+
+.shared{
+    display: flex;
+    align-items: center;
+    // display: flex;
+    justify-content: space-around;
+    // flex-direction: row;
+    span{
+    }
+}

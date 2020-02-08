@@ -1,0 +1,22 @@
+@import '../variables';
+@import '../functions';
+
+*body {
+    margin: 0;
+    padding: 0;
+};
+
+.content {
+    background: color(accent);
+    display: block;
+    padding: 20px;
+    margin:  1em auto;
+    border-radius:  $borders;
+    box-shadow:  0 10px 30px rgba(0,0,0, 0.2); 
+    width: 30%;
+    height: 90%;
+    #register {
+    background-color: color(primary-dark);
+    color:color(accent-light);
+    }
+}

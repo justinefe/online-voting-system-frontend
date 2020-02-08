@@ -1,0 +1,28 @@
+@import '../variables';
+@import '../functions';
+
+.button{
+    background-color: color(primary-dark);
+    color: color(accent-light);
+}
+.all-btn {
+    background-color: color(accent-light);
+
+}
+#approveAll:hover{
+    background-color: color(primary-light);  
+    color: color(primary-dark);
+}
+
+#approve:hover{
+    background-color: color(primary-light);  
+    color: color(primary-dark);
+}
+#reject:hover{
+    color: color(primary-dark);
+    background-color: color(accent); 
+}
+#rejectAll:hover{
+    background-color: color(accent);  
+    color: color(primary-dark);
+}

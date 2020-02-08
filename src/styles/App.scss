@@ -1,0 +1,37 @@
+    
+body {
+	@apply font-montserrat;
+}
+
+input, button, select, textarea {
+  &:focus {
+    outline: none;
+  }
+}
+.btn {
+	@apply cursor-pointer;
+}
+.btn-purple{
+	@apply bg-purple-650 text-white text-sm font-montserrat rounded-full;
+	box-shadow: 4px 4px 10px rgba(124, 123, 123, 0.4);
+	padding: 0.6em;
+}
+.btn-white{
+	@apply bg-white text-sm rounded-full;
+	box-shadow: 4px 4px 10px rgba(124, 123, 123, 0.4);
+	padding: 0.6em;
+}
+.bg{
+  background: url('/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 93vh;
+  @apply flex flex-col;
+}
+.card{
+	@apply flex  content-around relative bg-white shadow rounded-2xl;
+}
+
+#app {
+	@apply flex flex-col h-screen overflow-x-hidden ;
+}

@@ -1,0 +1,41 @@
+@import '../variables';
+@import '../functions';
+
+.button-inner {
+    border-radius: 50%;
+    height: 35px;
+    justify-content: space-between;
+}
+.inner {
+    display: flex;
+}
+.spa {
+    font-size: 40px !important;
+    text-align: center;
+    padding: 0 18px 0 4px;
+}
+
+.right-span {
+    margin-left: 40px;
+}
+
+Input {
+    font-family: $font;
+    font-weight: 700; 
+    padding-left: 5px;
+    font-size: 1.1em !important;
+    font-style: italic;
+}
+// .btn{
+//     span{
+//     color: red($color: #000000);
+//     // font-size: 0em !important;
+//     }
+// }
+// #facebook{
+//     // font-size: 2em;
+//     #facebook{
+//         font-size: 2em;
+//         }
+    
+//     }

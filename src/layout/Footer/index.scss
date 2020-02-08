@@ -1,0 +1,73 @@
+@import '../variables';
+@import '../functions';
+
+@function color($color-name) {
+    @return map-get($colors, $color-name )
+};
+
+@mixin  desktop {
+    @media (min-width: #{$destop}) {
+        @content;
+    }    
+};
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    #upper_footer{
+        background-color: color(accent-light);
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        .footer-section {
+            padding: $padding;
+             
+            a {
+                display: block;
+                text-decoration: none;
+                color: color(primary-dark); 
+                font-family: $font
+
+            }
+            h4 {
+                color: color(primary-dark);
+                font-family: $font
+            }
+        }
+    }
+    #lower_footer {
+        text-align: center;
+        height: 15px;
+        background-color: color(accent);
+        padding: $padding;
+        
+        span {
+               font-family: $font;
+        }
+    }
+}
+#social-footer {
+ display: block;
+ width: 100%;
+ margin: 0 auto;
+ font-size: 4em;
+ text-align: center;
+ background-color: color(accent-light);
+ border-bottom: 2px solid
+}
+.footer-soc {
+    
+    margin-right: 1em
+} 
+
+.soc {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-right: 1.4em !important;
+    // color: blue;
+}
+
+#social-media-continue {
+    font-size: 0.7em;
+    margin-right: 1em;
+    color: color(primary);
+}
