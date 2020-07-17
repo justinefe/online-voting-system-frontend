@@ -1,0 +1,78 @@
+$colors: (
+    primary: #005DFF,
+    primary-light: lighten( #005DFF, 40%),
+    primary-dark: darken( #005DFF, 40%),
+    accent-light: lighten( #FFF6BB, 15%),
+    accent: #FFF6BB
+);
+
+$padding: 20px;
+$borders: 15px;
+$destop: 848px; 
+$font: 'Montserrat', sans-serif;
+
+
+
+@function color($color-name) {
+    @return map-get($colors, $color-name )
+};
+
+@mixin  desktop {
+    @media (min-width: #{$destop}) {
+        @content;
+    }    
+};
+*body {
+    margin: 0;
+    padding: 0;
+};
+
+.header {
+    display: grid;
+    height: 60px;
+    background-color: color(accent-light);
+    border-bottom: 2px solid color(primary-light);
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'logo  links';
+      
+    #logo {
+        grid-area: logo;
+        font-family: $font;
+        padding: $padding;
+        margin-left: 3em; 
+        
+                a {
+                     color: color(primary-dark);
+                     font-size: 1.5em; 
+                     font-weight: bold;
+                }
+    }
+
+    #links {
+        grid-area: links;
+                 ul {
+                    padding-left: 20em; 
+                  li {
+                        display: inline;
+                        padding: $padding;
+                        &:hover{
+                            background-color: color(accent);
+                            border-radius: 8%;
+                       }   
+
+                        a {
+                            color: color(primary-dark);
+                             font-size: 1.2em; 
+                             font-weight: bold;
+                             font-family: $font;
+                             &:hover{
+                                 color: color(primary-dark);
+                                 background-color: color(accent);
+                            }                              
+                        } 
+                                       
+                     }
+            }
+    }
+
+}

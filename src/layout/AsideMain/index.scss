@@ -1,0 +1,59 @@
+$colors: (
+    primary: #005DFF,
+    primary-light: lighten( #005DFF, 40%),
+    primary-dark: darken( #005DFF, 40%),
+    accent-light: lighten( #FFF6BB, 15%),
+    accent: #FFF6BB
+);
+
+$padding: 20px;
+$borders: 15px;
+$font: 'Montserrat', sans-serif;
+$destop: 848px; 
+
+
+@function color($color-name) {
+    @return map-get($colors, $color-name )
+};
+
+@mixin  desktop {
+    @media (min-width: #{$destop}) {
+        @content;
+    }    
+};
+ 
+#aside {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 80%;
+    margin: 6em auto;
+    grid-gap: 60px;
+   
+
+    .card {
+        background:#fff;
+        padding: $padding;
+        display: inline-block;
+        overflow: hidden;
+        border-radius:  $borders;
+        box-shadow:  0 10px 30px rgba(0,0,0, 0.2); 
+        width: 90%;
+        height: 50%;
+        margin-left: 2em;
+        
+        span {
+            height: 80px;
+            text-align: auto;
+            font-family: $font;
+        }
+    }
+    #round-card {
+        border-radius:  50%;
+        border: color(accent) solid 10px;
+        height: fit-content;
+        align-self: center;
+        overflow: hidden;
+        height: 90%;
+        width: 90%;
+    }
+}
